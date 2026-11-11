@@ -39,7 +39,6 @@ La relación implementada es de muchos a uno (`@ManyToOne`), ya que varios alumn
 
 ### Evidencia de las entidades
 
-<!-- Captura de las dos entidades y sus anotaciones de relación -->
 
 ![Entidades relacionadas](src/images/entidades.png)
 
@@ -51,15 +50,13 @@ Se implementaron las cuatro operaciones principales para administrar los registr
 
 Permite registrar nuevos datos en la aplicación, almacenándolos en la base de datos y asociándolos con la entidad relacionada.
 
-<!-- Captura del formulario y/o resultado de creación -->
-
 ![Crear registro](src/images/crear.png)
+![Crear registro](src/images/crear2.png)
 
 ### 2. Consultar (Read)
 
 Permite visualizar los registros almacenados en la base de datos. También se muestra la información de la entidad relacionada, en lugar de mostrar únicamente su identificador.
 
-<!-- Captura del listado de registros con la relación -->
 
 ![Consultar registros](src/images/consultar.png)
 
@@ -67,17 +64,17 @@ Permite visualizar los registros almacenados en la base de datos. También se mu
 
 Permite modificar la información de un registro existente y guardar los cambios en la base de datos.
 
-<!-- Captura de la actualización de un registro -->
 
 ![Actualizar registro](src/images/actualizar.png)
+![Actualizar registro](src/images/actualizar1.png)
 
 ### 4. Eliminar (Delete)
 
 Permite eliminar un registro de la base de datos mediante la operación correspondiente.
 
-<!-- Captura de la eliminación de un registro -->
 
 ![Eliminar registro](src/images/eliminar.png)
+![Eliminar registro](src/images/eliminar2.png)
 
 ## Despliegue en VPS
 
@@ -91,9 +88,7 @@ Se generó el archivo JAR del proyecto y se ejecutó en un puerto independiente 
 
 **Base de datos:** MySQL.
 
-<!-- Captura del proyecto funcionando en el VPS -->
-
-![Proyecto desplegado en VPS](src/images/vps.png)
+![Proyecto desplegado en VPS](src/images/consultar.png)
 
 ## Autor
 
