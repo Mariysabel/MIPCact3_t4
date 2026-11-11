@@ -24,7 +24,6 @@ public class AlumnoService {
     @Autowired
     private MateriaRepository materiaRepo;
 
-    // CONVERTIR A DTO
     private AlumnoDTO convertirDTO(Alumno alumno) {
 
         AlumnoDTO dto = new AlumnoDTO();
@@ -41,7 +40,6 @@ public class AlumnoService {
         return dto;
     }
 
-    // LISTAR
     public List<AlumnoDTO> listar() {
         return repo.findAll()
                 .stream()
@@ -49,7 +47,6 @@ public class AlumnoService {
                 .collect(Collectors.toList());
     }
 
-    // BUSCAR
     public AlumnoDTO buscar(Integer id) {
 
         Alumno alumno = repo.findById(id)
@@ -59,7 +56,6 @@ public class AlumnoService {
         return convertirDTO(alumno);
     }
 
-    // GUARDAR
     public AlumnoDTO guardar(AlumnoDTO dto) {
 
         Alumno alumno = new Alumno();
@@ -76,7 +72,6 @@ public class AlumnoService {
         return convertirDTO(repo.save(alumno));
     }
 
-    // ACTUALIZAR
     public AlumnoDTO actualizar(Integer id, AlumnoDTO dto) {
 
         Alumno alumno = repo.findById(id)
@@ -95,7 +90,6 @@ public class AlumnoService {
         return convertirDTO(repo.save(alumno));
     }
 
-    // ELIMINAR
     public void eliminar(Integer id) {
 
         if (!repo.existsById(id)) {

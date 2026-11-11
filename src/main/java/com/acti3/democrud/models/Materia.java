@@ -19,11 +19,9 @@ public class Materia {
     @OneToMany(mappedBy = "materia")
     private List<Alumno> alumnos = new ArrayList<>();
 
-    // Constructor
     public Materia() {
     }
 
-    // Getters y Setters
     public Integer getId() {
         return id;
     }

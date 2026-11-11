@@ -17,11 +17,9 @@ public class Alumno {
     @JoinColumn(name = "materia_id")
     private Materia materia;
 
-    // Constructor
     public Alumno() {
     }
 
-    // Getters y Setters
     public Integer getId() {
         return id;
     }
